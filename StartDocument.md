@@ -138,5 +138,5 @@ FC Emmen, the local soccer club of Emmen, requires an application to monitor the
 |-----------------------------|--------------------------------------------------------------------------------------|
 | removePlayerWithBlackCard() | Senior Team: `Player removed: Jadyn` <br/> Junior Team: `No player has a Black card` |
 
-Please note that the function output is void but the text appears in Console
+Please note that the function output is void but the above highlighted text appears in the Console
 
