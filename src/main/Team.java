@@ -45,7 +45,7 @@ public class Team {
             int totalCards = 0;
             // Gets the cards and their counts
             HashMap<Card, Integer> cards = player.getCards();
-            // For each count in the card counts
+            // For each card in the card counts
             for (int count : cards.values()) {
                 // Increment it to the total cards
                 totalCards += count;
