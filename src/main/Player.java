@@ -7,7 +7,7 @@ public class Player {
     private String name;
 
     // HashMap<Card,Integer> because the key(Card) can either be Yellow, Red or Black and the value(Integer) is to show the number of cards received
-    private final HashMap<Card, Integer> cards;
+    private HashMap<Card, Integer> cards;
 
     public Player(String name) {
         this.name = name;
