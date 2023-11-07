@@ -1,5 +1,6 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 // Created a Club class consisting of a name and a Hashmap of Teams
@@ -44,16 +45,16 @@ public class Club {
         return totalClubFine;
     }
 
-    public Player getClubFairplayAwardWinner() {
-        // Setting the fairplay winner to nobody/nothing
-        Player fairplayWinner = null;
+    public ArrayList<Player> getClubFairplayAwardWinners() {
+        // Create arraylist to add multiple winners
+        ArrayList<Player> fairplayWinners = new ArrayList<>();
         // Sets the minimum cards to the maximum integer value (2147483647)
         int minCards = Integer.MAX_VALUE;
         // Loop through each team in the Teams Hashmap
         for (Team team : teams.values()) {
-            // Sets the currentPlayer variable to the TeamFairplayWinner of said team
-            Player currentPlayer = team.getTeamFairplayAwardWinner();
-            if (currentPlayer != null) {
+            // Gets the winners of fairplay in each team
+            ArrayList<Player> currentTeamPlayers = team.getTeamFairplayAwardWinners();
+            for (Player currentPlayer : currentTeamPlayers) {
                 // Sets the totalCards to 0
                 int totalCards = 0;
                 // Gets the cards of the current player that is being looped through
@@ -67,11 +68,18 @@ public class Club {
                 if (totalCards < minCards) {
                     // Set minimum cards to the total cards variable
                     minCards = totalCards;
-                    // Set the fairplay winner to the player with the minimum cards
-                    fairplayWinner = currentPlayer;
+                    // Clears the ArrayList
+                    fairplayWinners.clear();
+                    // Add winners to the list
+                    fairplayWinners.add(currentPlayer);
+                }
+                // Otherwise if the total cards of players are equal to each other
+                else if (totalCards == minCards) {
+                    // Add them to the list
+                    fairplayWinners.add(currentPlayer);
                 }
             }
         }
-        return fairplayWinner;
+        return fairplayWinners;
     }
 }
