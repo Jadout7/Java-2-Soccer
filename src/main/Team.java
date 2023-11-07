@@ -3,7 +3,9 @@ package main;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-// Created a Team class consisting of a name and a Hashmap of Players
+/**
+ * Created a Team class consisting of a name and a Hashmap of Players
+ */
 public class Team {
     // Forgot to add the minimum amount of players
     private static final int MIN_PLAYERS = 11;
@@ -13,23 +15,48 @@ public class Team {
     // Key is the player's name and value is the player itself
     private HashMap<String, Player> players;
 
+    /**
+     * Constructor for the Team class
+     *
+     * @param name the name of the team
+     */
     public Team(String name) {
         this.name = name;
         this.players = new HashMap<>();
     }
 
+    /**
+     * Method to get the name of the team
+     *
+     * @return the name of the team
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Method to get the players of the team
+     *
+     * @return the players of the team
+     */
     public HashMap<String, Player> getPlayers() {
         return players;
     }
 
+    /**
+     * Method to set the name of the team
+     *
+     * @param name the name of the team
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Method to add a player to the team
+     *
+     * @param player the player to be added
+     */
     public void addPlayer(Player player) {
         // If the size of HashMap is less than 22
         if (players.size() < MAX_PLAYERS) {
@@ -41,6 +68,11 @@ public class Team {
         }
     }
 
+    /**
+     * Method to remove a player from the team
+     *
+     * @param playerName the name of the player to be removed
+     */
     public void removePlayer(String playerName) {
         // If the size of the HashMap is more than 11
         if (players.size() > MIN_PLAYERS) {
@@ -52,6 +84,11 @@ public class Team {
         }
     }
 
+    /**
+     * Method to get the players who won the Team Fairplay Award
+     *
+     * @return the list of players who won the Team Fairplay Award
+     */
     public ArrayList<Player> getTeamFairplayAwardWinners() {
         // Create arraylist to add multiple winners
         ArrayList<Player> fairplayWinners = new ArrayList<>();
@@ -86,6 +123,11 @@ public class Team {
         return fairplayWinners;
     }
 
+    /**
+     * Method to calculate the total fine for the team
+     *
+     * @return the total fine for the team
+     */
     public double calculateTotalTeamFine() {
         double totalTeamFine = 0;
         // Loops through each player in the HashMap
@@ -96,6 +138,9 @@ public class Team {
         return totalTeamFine;
     }
 
+    /**
+     * Method to remove a player with a Black card from the team
+     */
     public void removePlayerWithBlackCard() {
         // Set a boolean variable to tell if the player is removed or not
         boolean removed = false;

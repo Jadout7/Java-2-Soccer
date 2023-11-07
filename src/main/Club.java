@@ -3,37 +3,74 @@ package main;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-// Created a Club class consisting of a name and a Hashmap of Teams
+/**
+ * Created a Club class consisting of a name and a Hashmap of Teams
+ */
 public class Club {
     private String name;
     // Key is the Team name and Value is the Team itself
     private HashMap<String, Team> teams;
 
+    /**
+     * Constructor for Club class
+     *
+     * @param name the name of the club
+     */
     public Club(String name) {
         this.name = name;
         this.teams = new HashMap<>();
     }
 
+    /**
+     * Method to get the name of the club
+     *
+     * @return the name of the club
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Method to get the teams of the club
+     *
+     * @return the teams of the club
+     */
     public HashMap<String, Team> getTeams() {
         return teams;
     }
 
+    /**
+     * Method to set the name of the club
+     *
+     * @param name the name of the club
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Method to add a team to the club
+     *
+     * @param team the team to be added
+     */
     public void addTeam(Team team) {
         teams.put(team.getName(), team);
     }
 
+    /**
+     * Method to remove a team from the club
+     *
+     * @param teamName the name of the team to be removed
+     */
     public void removeTeam(String teamName) {
         teams.remove(teamName);
     }
 
+    /**
+     * Method to calculate the total fine for the club
+     *
+     * @return the total fine for the club
+     */
     public double calculateTotalClubFine() {
         // Set totalClubFine to 0
         double totalClubFine = 0;
@@ -45,6 +82,11 @@ public class Club {
         return totalClubFine;
     }
 
+    /**
+     * Method to get the players who won the Club Fairplay Award
+     *
+     * @return the list of players who won the Club Fairplay Award
+     */
     public ArrayList<Player> getClubFairplayAwardWinners() {
         // Create arraylist to add multiple winners
         ArrayList<Player> fairplayWinners = new ArrayList<>();

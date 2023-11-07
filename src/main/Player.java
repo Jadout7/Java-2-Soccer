@@ -2,31 +2,57 @@ package main;
 
 import java.util.HashMap;
 
-// Created a Player class consisting of a name and a Hashmap of cards to keep track of fines
+/**
+ * Created a Player class consisting of a name and a Hashmap of cards to keep track of fines
+ */
 public class Player {
     private String name;
 
     // HashMap<Card,Integer> because the key(Card) can either be Yellow, Red or Black and the value(Integer) is to show the number of cards received
     private HashMap<Card, Integer> cards;
 
+    /**
+     * Constructor for the Player class
+     *
+     * @param name the name of the player
+     */
     public Player(String name) {
         this.name = name;
         this.cards = new HashMap<>();
     }
 
+    /**
+     * Method to get the name of the player
+     *
+     * @return the name of the player
+     */
     public String getName() {
         return name;
     }
 
-    // Returns each card with their respective card count
+    /**
+     * Method to get the cards of the player
+     *
+     * @return the cards of the player
+     */
     public HashMap<Card, Integer> getCards() {
         return cards;
     }
 
+    /**
+     * Method to set the name of the player
+     *
+     * @param name the name of the player
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Method to add a card to the player's cards
+     *
+     * @param card the card to be added
+     */
     public void addCard(Card card) {
         // Check if the card exists in the HashMap
         if (cards.containsKey(card)) {
@@ -38,6 +64,11 @@ public class Player {
         }
     }
 
+    /**
+     * Method to remove a card from the player's cards
+     *
+     * @param card the card to be removed
+     */
     public void removeCard(Card card) {
         // If the cards HashMap contains that card
         if (cards.containsKey(card)) {
@@ -58,6 +89,11 @@ public class Player {
         }
     }
 
+    /**
+     * Method to calculate the total fine for the player
+     *
+     * @return the total fine for the player
+     */
     public double calculateTotalPlayerFine() {
         double totalFine = 0;
         // Gets all the cards and their counts
