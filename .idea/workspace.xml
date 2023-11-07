@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8e3c28d-58d4-46f8-8f0f-8495820dc8e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/ClubTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/PlayerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TeamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Club.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Club.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Team.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +72,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest.testCalculateTotalPlayerFine">
+  <component name="RunManager">
     <configuration name="PlayerTest.testAddCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java2Soccer" />
       <extension name="coverage">
@@ -127,7 +130,8 @@
       <workItem from="1699267075618" duration="10727000" />
       <workItem from="1699282427287" duration="5669000" />
       <workItem from="1699294501335" duration="17230000" />
-      <workItem from="1699353470389" duration="4191000" />
+      <workItem from="1699353470389" duration="10809000" />
+      <workItem from="1699368625575" duration="1987000" />
     </task>
     <servers />
   </component>
