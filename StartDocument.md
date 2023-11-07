@@ -54,7 +54,7 @@ FC Emmen, the local soccer club of Emmen, requires an application to monitor the
 
 ## Class Diagram
 
-![img.png](SoccerAssignmentClassDiagram.png)
+![Soccer Java 2 Class Diagram](SoccerJava2ClassDiagram.png)
 
 --- 
 
@@ -68,17 +68,17 @@ FC Emmen, the local soccer club of Emmen, requires an application to monitor the
 |-------------|-------------|----------|------------|
 | Alex        | 2           | 1        | 0          | 
 | Jadyn       | 1           | 0        | 1          | 
-| Nico        | 0           | 1        | 0          | 
-| Jan         | 3           | 0        | 0          |
+| Nico        | 0           | 1        | 0          |
 
 <br>
 
 #### Team
 
-| Team Name   | Players     |
-|-------------|-------------|
-| Senior Team | Jadyn, Alex |
-| Junior Team | Nico, Jan   |
+| Team Name     | Players                |
+|---------------|------------------------|
+| Senior Team   | Jadyn, Alex            |
+| Junior Team   | Nico                   |
+| Team Test     | P1, P2, P3, ....., P22 | 
 
 <br>
 
@@ -92,51 +92,67 @@ FC Emmen, the local soccer club of Emmen, requires an application to monitor the
 
 ### Test Cases
 
-#### Test Case 1: Calculating Fine for said Player
+#### Test Case 1: Removing more than 11 players from a team
 
-| Action                     | Expected Output                                                                                            |
-|----------------------------|------------------------------------------------------------------------------------------------------------|
-| CalculateTotalPlayerFine() | Alex's Fine: `€78.24` <br/> Jadyn's Fine: `€368.08` <br/> Nico's Fine: `€41.60` <br/> Jan's Fine: `€54.96` |
-
-<br>
-
-#### Test Case 2: Calculating Fine for said Team
-
-| Action                   | Expected Output                                                  |
-|--------------------------|------------------------------------------------------------------|
-| CalculateTotalTeamFine() | Senior Team's Fine: `€446.32` <br/> Junior Team's Fine: `€96.56` |
+| Action                           | Expected Output                                                         |
+|----------------------------------|-------------------------------------------------------------------------|
+| seniorTeam.removePlayer("Jadyn") | "Cannot remove more players. Team is at the minimum required capacity." |
 
 <br>
 
-#### Test Case 3: Calculating Total Fine for the Club
+#### Test Case 2: Adding more than 22 players to a team
+
+| Action                   | Expected Output                                                 |
+|--------------------------|-----------------------------------------------------------------|
+| teamTest.addPlayer(Nico) | "Cannot add more players. Team is already at maximum capacity." |
+
+<br>
+
+#### Test Case 3: Calculating Fine for a Player
+
+| Action                     | Expected Output                                                                 |
+|----------------------------|---------------------------------------------------------------------------------|
+| CalculateTotalPlayerFine() | Alex's Fine: `€78.24` <br/> Jadyn's Fine: `€368.08` <br/> Nico's Fine: `€41.60` |
+
+<br>
+
+#### Test Case 4: Calculating Fine for a Team
+
+| Action                   | Expected Output                                                 |
+|--------------------------|-----------------------------------------------------------------|
+| CalculateTotalTeamFine() | Senior Team's Fine: `€446.32` <br/> Junior Team's Fine: `€41.60` |
+
+<br>
+
+#### Test Case 5: Calculating Total Fine for the Club
 
 | Action                   | Expected Output            |
 |--------------------------|----------------------------|
-| CalculateTotalClubFine() | Total Club Fine: `€542.88` |
+| CalculateTotalClubFine() | Total Club Fine: `€487.92` |
 
 <br>
 
-#### Test Case 4: Checking for said Team's Fairplay Award Winner
+#### Test Case 6: Checking for said Team's Fairplay Award Winner(s)
 
-| Action                       | Expected Output                                                                                |
-|------------------------------|------------------------------------------------------------------------------------------------|
-| getTeamFairplayAwardWinner() | Senior Team's Fairplay Award Winner: `Jadyn` <br/> Junior Team's Fairplay Award Winner: `Nico` |
-
-<br>
-
-#### Test Case 5: Checking for the Club's Fairplay Award Winner
-
-| Action                       | Expected Output                      |
-|------------------------------|--------------------------------------|
-| getClubFairplayAwardWinner() | Club's Fairplay Award Winner: `Nico` |
+| Action                        | Expected Output                                                                                 |
+|-------------------------------|-------------------------------------------------------------------------------------------------|
+| getTeamFairplayAwardWinners() | Senior Team's Fairplay Award Winners: `Jadyn` <br/> Junior Team's Fairplay Award Winner: `Nico` |
 
 <br>
 
-#### Test Case 6: Removing Players with Black Cards
+#### Test Case 7: Checking for the Club's Fairplay Award Winner(s)
 
-| Action                      | Expected Output                                                                      |
-|-----------------------------|--------------------------------------------------------------------------------------|
-| removePlayerWithBlackCard() | Senior Team: `Player removed: Jadyn` <br/> Junior Team: `No player has a Black card` |
+| Action                        | Expected Output                       |
+|-------------------------------|---------------------------------------|
+| getClubFairplayAwardWinners() | Club's Fairplay Award Winners: `Nico` |
+
+<br>
+
+#### Test Case 8: Removing Players with Black Cards
+
+| Action                      | Expected Output                                                                       |
+|-----------------------------|---------------------------------------------------------------------------------------|
+| removePlayerWithBlackCard() | Senior Team: `Players removed: Jadyn` <br/> Junior Team: `No player has a Black card` |
 
 Please note that the function output is void but the above highlighted text appears in the Console
 

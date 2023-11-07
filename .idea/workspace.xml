@@ -8,11 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8e3c28d-58d4-46f8-8f0f-8495820dc8e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/SoccerJava2ClassDiagram.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Club.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Club.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SoccerAssignmentClassDiagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StartDocument.md" beforeDir="false" afterPath="$PROJECT_DIR$/StartDocument.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PlayerTest.testAddCard">
     <configuration name="PlayerTest.testAddCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java2Soccer" />
       <extension name="coverage">
@@ -132,6 +131,8 @@
       <workItem from="1699294501335" duration="17230000" />
       <workItem from="1699353470389" duration="10809000" />
       <workItem from="1699368625575" duration="6600000" />
+      <workItem from="1699375525991" duration="919000" />
+      <workItem from="1699393560420" duration="1190000" />
     </task>
     <servers />
   </component>
