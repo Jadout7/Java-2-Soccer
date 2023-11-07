@@ -27,11 +27,16 @@ public class Player {
         this.name = name;
     }
 
-    // Increase the card count (Integer) by 1 by getting the type of card and incrementing 1
     public void addCard(Card card) {
-        cards.put(card, cards.get(card) + 1);
+        // Check if the card exists in the HashMap
+        if (cards.containsKey(card)) {
+            // If card exists, increment the count (Integer) by 1
+            cards.put(card, cards.get(card) + 1);
+        } else {
+            // If card doesn't exist (0 count), initialize the count to 1
+            cards.put(card, 1);
+        }
     }
-
 
     public void removeCard(Card card) {
         // If the cards HashMap contains that card

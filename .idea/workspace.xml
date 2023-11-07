@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8e3c28d-58d4-46f8-8f0f-8495820dc8e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/ClubTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/PlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/TeamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,8 +65,49 @@
       <recent name="C:\Users\infxm\OneDrive\Documents\GitHub\Java2Soccer\src" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="test" />
       <recent name="" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PlayerTest.testCalculateTotalPlayerFine">
+    <configuration name="PlayerTest.testAddCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java2Soccer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.PlayerTest" />
+      <option name="METHOD_NAME" value="testAddCard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.testCalculateTotalPlayerFine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java2Soccer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.PlayerTest" />
+      <option name="METHOD_NAME" value="testCalculateTotalPlayerFine" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PlayerTest.testCalculateTotalPlayerFine" />
+        <item itemvalue="JUnit.PlayerTest.testAddCard" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,7 +126,8 @@
       <workItem from="1699195297417" duration="5282000" />
       <workItem from="1699267075618" duration="10727000" />
       <workItem from="1699282427287" duration="5669000" />
-      <workItem from="1699294501335" duration="16927000" />
+      <workItem from="1699294501335" duration="17230000" />
+      <workItem from="1699353470389" duration="4191000" />
     </task>
     <servers />
   </component>
